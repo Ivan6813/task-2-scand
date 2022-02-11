@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.cards-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.left-card,
+.right-card {
+    width: 265px;
+    height: 275px;
+    padding: 30px 25px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    text-align: end;
+}
+
+.left-card {
+    background: #39d996;
+    color: white;
+    margin-right: 30px;
+}
+
+.right-card {
+    background: #ffffff;
+    color: #8a8a8a;
+}
+
+.header-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.left-card-star,
+.right-card-star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+}
+
+.left-card-star {
+    background: #2eae77;
+    border-radius: 50%;
+}
+
+.icon-star {
+    width: 30px;
+    height: 30px;
+}
+
+.header-card-title {
+    font-family: "Roboto";
+    font-size: 33px;
+    font-weight: 300;
+}
+
+.list-title {
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.checked-list {
+    margin-bottom: 25px;
+}
+
+.unchecked-list {
+    margin-bottom: 50px;
+}
+
+.checked-list-item,
+.unchecked-list-item {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 6px;
+}
+
+.checked-list-item::after,
+.unchecked-list-item::after {
+    display: block;
+    width: 19px;
+    height: 19px;
+    margin-left: 15px;
+}
+
+.checked-list-item::after {
+    content: url(./icon/checked\ icon.svg);
+}
+
+.unchecked-list-item::after {
+    content: url(./icon/uncheck\ icon.svg);
+}
+
+.footer-card {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 300;
+}
